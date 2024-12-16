@@ -722,6 +722,63 @@
   }
   /* mobile phone screen */
   @media (max-width: 700px) {
+    .time-based {
+      grid-template-rows: repeat(41, 1fr);
+      height: 150rem;
+      /* height: 64.25rem; */
+    }
+    .month {
+      grid-area: 2/1/8/10;
+    }
+    .month .history {
+      margin-top: 2rem;
+    }
+    .session {
+      grid-area: 3/10/7/13;
+      padding: 17.14px 0;
+      text-align: center;
+      margin-left: 0;
+    }
+
+    .session-description {
+      margin-top: 1rem;
+    }
+    .activity {
+      grid-area: 8/1/14/13;
+      padding: 15px 5px;
+      /* height: 322px;*/
+    }
+    .vertical-axis {
+      font-size: 0.45rem;
+    }
+    .activity .heading {
+      margin-bottom: 16px;
+    }
+    .graph-data__holder > div * {
+      width: 8px;
+    }
+    .knowledge {
+      grid-area: 14/1/18/13;
+      gap: 0.1rem;
+    }
+    .ability-topic {
+      grid-row: 18/23;
+      /* height: 17.5rem; */
+    }
+    .strongest-topic {
+      grid-row: 23/28;
+    }
+    .ability {
+      gap: 2rem;
+    }
+    .leaderboard {
+      grid-row: 28/35;
+      grid-column: span 12;
+    }
+    .group {
+      grid-row: 35/42;
+    }
+    /* ////////////////////// */
     .container {
       display: block;
       padding: 1rem;
