@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <header>
+          <h1><img src="./assets/TESLA.svg" alt="site logo" /></h1>
+          <div class="toggled-nav hidden">
+          <ul>
+            <li class="blue-background">
+              <a href="#"
+                ><img src="./assets/arrow.svg" alt="" aria-hidden="true" />
+                <p>Reports</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/lightning.svg" alt="" aria-hidden="true" />
+                <p>Library</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/People.svg" alt="" aria-hidden="true" />
+                <p>People</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./assets/Assignments.svg"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <p>Activities</p></a
+              >
+            </li>
+          </ul>
+          <p class="support">Support</p>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./assets/Bulb.svg" alt="" aria-hidden="true" />
+                <p>Get Started</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./assets/Settings.svg" alt="" aria-hidden="true" />
+                <p>Settings</p></a
+              >
+            </li>
+          </ul>
+          <figure>
+            <div>
+              <img src="./assets/sam-wheeler.svg" alt="Sam Wheeler" />
+            </div>
+  
+            <figcaption>
+              <p class="name">Sam Wheeler</p>
+              <p class="email">samwheeler@example.com</p>
+            </figcaption>
+          </figure>
+        </div>
+        </header>
+       
+      </nav>
+      <div class="svg-container">
+        <svg
+        class="menu nav-svg"
+        width="34"
+        height="36"
+        viewBox="0 0 21 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 4.5C0 3.67031 0.670312 3 1.5 3H19.5C20.3297 3 21 3.67031 21 4.5C21 5.32969 20.3297 6 19.5 6H1.5C0.670312 6 0 5.32969 0 4.5ZM0 12C0 11.1703 0.670312 10.5 1.5 10.5H19.5C20.3297 10.5 21 11.1703 21 12C21 12.8297 20.3297 13.5 19.5 13.5H1.5C0.670312 13.5 0 12.8297 0 12ZM21 19.5C21 20.3297 20.3297 21 19.5 21H1.5C0.670312 21 0 20.3297 0 19.5C0 18.6703 0.670312 18 1.5 18H19.5C20.3297 18 21 18.6703 21 19.5Z"
+          fill="#FF7B54"
+        />
+      </svg>
+
+      <svg
+        class="close nav-svg hidden"
+        width="34"
+        height="36"
+        viewBox="0 0 19 23"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_2_236)">
+          <path
+            d="M18.2424 3.79587C18.7897 3.18493 18.7025 2.27751 18.0438 1.76989C17.385 1.26227 16.4065 1.34313 15.8591 1.95407L9.30048 9.25387L2.74181 1.95407C2.19445 1.34313 1.21598 1.26227 0.557204 1.76989C-0.101569 2.27751 -0.188759 3.18493 0.358604 3.79587L7.28056 11.5L0.358604 19.2041C-0.188759 19.815 -0.101569 20.7224 0.557204 21.23C1.21598 21.7377 2.19445 21.6568 2.74181 21.0459L9.30048 13.7461L15.8591 21.0459C16.4065 21.6568 17.385 21.7377 18.0438 21.23C18.7025 20.7224 18.7897 19.815 18.2424 19.2041L11.3204 11.5L18.2424 3.79587Z"
+            fill="#FF7B54"
+          />
+        </g>
+        <defs>
+          <clipPath id="clip0_2_236">
+            <rect width="18.6006" height="23" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+      <main>
+        <div class="report">
+          <div class="report-heading">
+            <h2>Reports</h2>
+            <div>
+              <img src="./assets/Download.svg" alt="" aria-hidden="true" />
+              <a href="#">Download</a>
+            </div>
+          </div>
+          <div class="report-analysis">
+            <section class="time-based">
+              <div class="month">
+                <div class="heading">
+                  <p>Timeframe: <span>This Month</span></p>
+                  <img src="./assets/up-arrow.jpg" alt="" aria-hidden="true" />
+                </div>
+                <div class="history">
+                  <p>Last 7 Days</p>
+                  <p class="blue-background">This Month</p>
+                  <p>This Year</p>
+                  <p>Custom</p>
+                </div>
+              </div>
+              <div class="people all heading">
+                <p>People: <span>All</span></p>
+                <img src="./assets/up-arrow.jpg" alt="" aria-hidden="true" />
+              </div>
+              <div class="topic all heading">
+                <p>Topic: <span>All</span></p>
+                <img src="./assets/up-arrow.jpg" alt="" aria-hidden="true" />
+              </div>
+              <div class="session">
+                <p class="session-description">Av. Session Length</p>
+                <p class="session-time">2m 34s</p>
+              </div>
+              <div class="activity">
+                <div class="heading">
+                  <p>Activity</span></p>
+                  <div>
+                    <p>Month</p>
+                    <img
+                      src="./assets/dropdown.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div class="activity-analysis">
+                  <div class="vertical-axis">
+                    <div class="graph-values">
+                      <p>400</p>
+                      <p>300</p>
+                      <p>200</p>
+                      <p>100</p>
+                      <p>0</p>
+                    </div>
+                    <div class="graph-data">
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>jan</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>feb</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>mar</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>apr</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>may</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>jun
+                      </p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>jul</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>aug</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>sep</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>oct</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>nov</p>
+                      </div>
+                      <div class="graph-data__holder">
+                        <div>
+                        <div class="light"></div>
+                        <div class="dark"></div>
+                      </div>
+                      <p>dec</p>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="knowledge">
+                <div class="starting">
+                  <p class="knowledge-description">Starting Knowledge</p>
+                  <p class="knowledge-percentage">64%</p>
+                  <div>
+                    <img src="./assets/Graph.svg" alt="graph" />
+                  </div>
+                </div>
+                <div class="current">
+                  <p class="knowledge-description">Current Knowledge</p>
+                  <p class="knowledge-percentage">86%</p>
+                  <div>
+                    <img src="./assets/Graph.svg" alt="graph" />
+                  </div>
+                </div>
+                <div class="gain">
+                  <p class="knowledge-description">Knowledge Gain</p>
+                  <p class="knowledge-percentage">+34%</p>
+                  <div>
+                    <img src="./assets/Graph.svg" alt="graph" />
+                  </div>
+                </div>
+              </div>
+              <div class="weakest-topic ability-topic">
+                <p>Weakest Topic</p>
+                <div class="ability">
+                  <div class="ability-item">
+                    <div class="image-container">
+                      <img src="./assets/food-safety.svg" alt="food safety">
+                    </div>
+                    <div class="ability-details">
+                      <p>Food Safety</p>
+                      <div>
+                      <div class="ability-progress">
+                        <div class="base"></div>
+                        <div class="cover"></div>
+                      </div>
+                      <p>74%:<span> Correct</span></p>
+                      </div>
+                    </div>
+                    
+
+                </div>
+                <div class="ability-item">
+                  <div class="image-container">
+                    <img src="./assets/compliance.svg" alt="compliance basics procedures">
+                  </div>
+                  <div class="ability-details">
+                    <p>Compliance Basics Procedures </p>
+                    <div>
+                    <div class="ability-progress">
+                      <div class="base"></div>
+                      <div class="cover"></div>
+                    </div>
+                    <p>52%:<span> Correct</span></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="ability-item">
+                <div class="image-container">
+                  <img src="./assets/company.svg" alt="company networking">
+                </div>
+                <div class="ability-details">
+                  <p>Company Networking</p>
+                  <div>
+                  <div class="ability-progress">
+                    <div class="base"></div>
+                    <div class="cover"></div>
+                  </div>
+                  <p>46%:<span> Correct</span></p>
+                  </div>
+                </div>
+            </div>
+              </div>
+              </div>
+              <div class="strongest-topic ability-topic">
+                <p>Strongest Topic</p>
+                <div class="ability">
+                  <div class="ability-item">
+                    <div class="image-container">
+                      <img src="./assets/covid.svg" alt="covid protocols">
+                    </div>
+                    <div class="ability-details">
+                      <p>Covid Protocols</p>
+                      <div>
+                      <div class="ability-progress">
+                        <div class="base"></div>
+                        <div class="cover"></div>
+                      </div>
+                      <p>95%:<span> Correct</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="ability-item">
+                  <div class="image-container">
+                    <img src="./assets/cyber-security.svg" alt="cyber security">
+                  </div>
+                  <div class="ability-details">
+                    <p>Cyber Security Basics</p>
+                    <div>
+                    <div class="ability-progress">
+                      <div class="base"></div>
+                      <div class="cover"></div>
+                    </div>
+                    <p>92%:<span> Correct</span></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="ability-item">
+                <div class="image-container">
+                  <img src="./assets/social-media.svg" alt="social media policies">
+                </div>
+                <div class="ability-details">
+                  <p>Social Media Policies</p>
+                  <div>
+                  <div class="ability-progress">
+                    <div class="base"></div>
+                    <div class="cover"></div>
+                  </div>
+                  <p>89%:<span> Correct</span></p>
+                  </div>
+                </div>
+            </div>
+              </div>
+              </div>
+              <div class="user leaderboard">
+                <p>User Leaderboard</p>
+                <div class="rankings">
+                  <div class="ranking-item">
+                    <div class="ranking-image-container">
+                      <img src="./assets/Thomas.svg" alt="Thomas">
+                    </div>
+                    <div class="ranking-details">
+                      <p>Jesse Thomas</p>
+                      <div>
+                        <p>637 Points - 98% Correct</p>
+                        <div class="ranking-direction">
+                          <p>1</p>
+                          <img src="./assets/lead-up.svg" alt="" aria-hidden="true">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ranking-item">
+                    <div class="ranking-image-container">
+                      <img src="./assets/Thisal.svg" alt="Thisal">
+                    </div>
+                    <div class="ranking-details">
+                      <p>Thisal Mathiyazhagan</p>
+                      <div>
+                        <p>637 Points - 89% Correct </p>
+                        <div class="ranking-direction">
+                          <p>2</p>
+                          <img src="./assets/lead-down.svg" alt="" aria-hidden="true">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ranking-item">
+                    <div class="ranking-image-container">
+                      <img src="./assets/Helen.svg" alt="Helen">
+                    </div>
+                    <div class="ranking-details">
+                      <p>Helen Chuang</p>
+                      <div>
+                        <p>637 Points - 98% Correct</p>
+                        <div class="ranking-direction">
+                          <p>3</p>
+                          <img src="./assets/lead-up.svg" alt="" aria-hidden="true">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ranking-item">
+                    <div class="ranking-image-container">
+                      <img src="./assets/Lura.svg" alt="Lura">
+                    </div>
+                    <div class="ranking-details">
+                      <p>Lura Silverman</p>
+                      <div>
+                        <p>637 Points</p>
+                        <div class="ranking-direction">
+                          <p>4</p>
+                          <img src="./assets/lead-up.svg" alt="" aria-hidden="true">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group leaderboard">
+                <p>Group Leaderboard</p>
+                <div class="group-ranking">
+                  <div class="group-ranking__item">
+                    <p>Houston Facility</p>
+                    <div class="group-analysis">
+                      <p>52 Points / User - 97% Correct</p>
+                      <div>
+                        <p>1</p>
+                        <img src="./assets/lead-up.svg" alt="" aria-hidden="true">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-ranking__item">
+                    <p>Test Group</p>
+                    <div class="group-analysis">
+                      <p>52 Points / User - 95% Correct</p>
+                      <div>
+                        <p>2</p>
+                        <img src="./assets/lead-down.svg" alt="" aria-hidden="true">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-ranking__item">
+                    <p>Sales Leadership</p>
+                    <div class="group-analysis">
+                      <p>52 Points / User -  87% Correct</p>
+                      <div>
+                        <p>1</p>
+                        <img src="./assets/lead-up.svg" alt="" aria-hidden="true">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="group-ranking__item">
+                    <p>Northeast Region</p>
+                    <div class="group-analysis">
+                      <p>52 Points / User</p>
+                      <div>
+                        <p>4</p>
+                        <img src="./assets/lead-up.svg" alt="" aria-hidden="true">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+              
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
