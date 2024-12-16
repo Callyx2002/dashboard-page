@@ -771,6 +771,9 @@
     .ability {
       gap: 2rem;
     }
+    .ability-item .ability-details div p {
+      margin-left: 0;
+    }
     .leaderboard {
       grid-row: 28/35;
       grid-column: span 12;
